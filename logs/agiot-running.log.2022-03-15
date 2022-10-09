@@ -1,0 +1,555 @@
+2022-03-15 16:54:32,273 - SerialPort COM5 is opening
+2022-03-15 16:54:32,283 - SerialPort COM1 is opening
+2022-03-15 16:54:32,283 - lora GateWay send request frame to LoRa end-device，start
+2022-03-15 16:54:33,285 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-03-15 16:54:35,403 - GateWay get the data of the lora end-device and start parsing
+2022-03-15 16:54:35,403 - GateWay get the data of the zigbee end-device and start parsing
+2022-03-15 16:54:35,407 - parse lora data[-8, 0, 0, 0, 8, 0, 112, 55, 2, 0, -110, 2, 1, 0, 53, -34, -24]
+2022-03-15 16:54:35,408 - parse zigbee data[69, 78, 68, 49, 32, 116, 101, 109, 112, 101, 114, 116, 117, 114, 101, 58, 49, 49, 32, 104, 117, 109, 105, 100, 105, 116, 121, 58, 49, 49, 13, 10]
+2022-03-15 16:54:35,418 - lora sensor data:[sensor: 1, date:2022-03-15 04:54:35, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:35,418 - zigbee sensor data:[sensor: 101, date:2022-03-15 04:54:35, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:35,744 - MLog clients using slf4j logging.
+2022-03-15 16:54:40,305 - Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+2022-03-15 16:54:40,466 - Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -> 3, acquireRetryAttempts -> 30, acquireRetryDelay -> 1000, autoCommitOnClose -> false, automaticTestTable -> null, breakAfterAcquireFailure -> false, checkoutTimeout -> 0, connectionCustomizerClassName -> null, connectionTesterClassName -> com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -> caller, dataSourceName -> 1hgemf5an1329vx612xydiq|3eaa20d8, debugUnreturnedConnectionStackTraces -> false, description -> null, driverClass -> com.mysql.cj.jdbc.Driver, extensions -> {}, factoryClassLocation -> null, forceIgnoreUnresolvedTransactions -> false, forceSynchronousCheckins -> false, forceUseNamedDriverClass -> false, identityToken -> 1hgemf5an1329vx612xydiq|3eaa20d8, idleConnectionTestPeriod -> 0, initialPoolSize -> 10, jdbcUrl -> jdbc:mysql://127.0.0.1:3306/agiot?serverTimezone=UTC, maxAdministrativeTaskTime -> 0, maxConnectionAge -> 0, maxIdleTime -> 30, maxIdleTimeExcessConnections -> 0, maxPoolSize -> 100, maxStatements -> 200, maxStatementsPerConnection -> 0, minPoolSize -> 10, numHelperThreads -> 3, preferredTestQuery -> null, privilegeSpawnedThreads -> false, properties -> {user=******, password=******}, propertyCycle -> 0, statementCacheNumDeferredCloseThreads -> 0, testConnectionOnCheckin -> false, testConnectionOnCheckout -> false, unreturnedConnectionTimeout -> 0, userOverrides -> {}, usesTraditionalReflectiveProxies -> false ]
+2022-03-15 16:54:42,498 - insert data into database, data is : [sensor: 1, date:2022-03-15 04:54:35, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:42,498 - insert data into database, data is : [sensor: 101, date:2022-03-15 04:54:35, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:42,998 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 52, 58, 51, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 54, 53, 46, 56, 44, 34, 115, 73, 100, 34, 58, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 48, 46, 49, 125]
+2022-03-15 16:54:42,998 - Send data to MQTT server, data is [sensor: 1, date:2022-03-15 04:54:35, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:42,998 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 52, 58, 51, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 49, 49, 46, 48, 44, 34, 115, 73, 100, 34, 58, 49, 48, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 49, 49, 46, 48, 125]
+2022-03-15 16:54:42,998 - Send data to MQTT server, data is [sensor: 101, date:2022-03-15 04:54:35, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:43,037 - delivery data to mqtt Complete: true
+2022-03-15 16:54:43,044 - delivery data to mqtt Complete: true
+2022-03-15 16:54:43,046 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@96ce312: startup date [Tue Mar 15 16:54:43 CST 2022]; root of context hierarchy
+2022-03-15 16:54:43,047 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@73d5b478: startup date [Tue Mar 15 16:54:43 CST 2022]; root of context hierarchy
+2022-03-15 16:54:43,100 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:54:43,100 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:54:43,286 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-03-15 16:54:44,001 - Failed to load any configuration from: config.properties. Using toolkit defaults
+2022-03-15 16:54:45,404 - GateWay get the data of the zigbee end-device and start parsing
+2022-03-15 16:54:45,405 - GateWay get the data of the lora end-device and start parsing
+2022-03-15 16:54:45,405 - parse zigbee data[69, 78, 68, 49, 32, 116, 101, 109, 112, 101, 114, 116, 117, 114, 101, 58, 49, 49, 32, 104, 117, 109, 105, 100, 105, 116, 121, 58, 49, 49, 13, 10]
+2022-03-15 16:54:45,405 - zigbee sensor data:[sensor: 101, date:2022-03-15 04:54:45, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:45,406 - parse lora data[-8, 0, 0, 0, 8, 0, 112, 55, 2, 0, -110, 2, 1, 0, 53, -34, -24]
+2022-03-15 16:54:45,407 - lora sensor data:[sensor: 1, date:2022-03-15 04:54:45, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:45,423 - insert data into database, data is : [sensor: 101, date:2022-03-15 04:54:45, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:45,439 - insert data into database, data is : [sensor: 1, date:2022-03-15 04:54:45, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:45,523 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 52, 58, 52, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 49, 49, 46, 48, 44, 34, 115, 73, 100, 34, 58, 49, 48, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 49, 49, 46, 48, 125]
+2022-03-15 16:54:45,523 - Send data to MQTT server, data is [sensor: 101, date:2022-03-15 04:54:45, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:45,524 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@282bbff7: startup date [Tue Mar 15 16:54:45 CST 2022]; root of context hierarchy
+2022-03-15 16:54:45,524 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:54:45,582 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 52, 58, 52, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 54, 53, 46, 56, 44, 34, 115, 73, 100, 34, 58, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 48, 46, 49, 125]
+2022-03-15 16:54:45,583 - Send data to MQTT server, data is [sensor: 1, date:2022-03-15 04:54:45, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:45,583 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@4244030d: startup date [Tue Mar 15 16:54:45 CST 2022]; root of context hierarchy
+2022-03-15 16:54:45,583 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:54:45,584 - delivery data to mqtt Complete: true
+2022-03-15 16:54:45,630 - delivery data to mqtt Complete: true
+2022-03-15 16:54:53,287 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-03-15 16:54:55,404 - GateWay get the data of the lora end-device and start parsing
+2022-03-15 16:54:55,404 - GateWay get the data of the zigbee end-device and start parsing
+2022-03-15 16:54:55,405 - parse lora data[-8, 0, 0, 0, 8, 0, 112, 55, 2, 0, -110, 2, 1, 0, 53, -34, -24]
+2022-03-15 16:54:55,405 - parse zigbee data[69, 78, 68, 49, 32, 116, 101, 109, 112, 101, 114, 116, 117, 114, 101, 58, 49, 49, 32, 104, 117, 109, 105, 100, 105, 116, 121, 58, 49, 49, 13, 10]
+2022-03-15 16:54:55,405 - lora sensor data:[sensor: 1, date:2022-03-15 04:54:55, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:55,405 - zigbee sensor data:[sensor: 101, date:2022-03-15 04:54:55, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:55,512 - insert data into database, data is : [sensor: 101, date:2022-03-15 04:54:55, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:55,528 - insert data into database, data is : [sensor: 1, date:2022-03-15 04:54:55, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:55,731 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 52, 58, 53, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 54, 53, 46, 56, 44, 34, 115, 73, 100, 34, 58, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 48, 46, 49, 125]
+2022-03-15 16:54:55,733 - Send data to MQTT server, data is [sensor: 1, date:2022-03-15 04:54:55, temperature:0.1, humidity: 65.8]
+2022-03-15 16:54:55,736 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 52, 58, 53, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 49, 49, 46, 48, 44, 34, 115, 73, 100, 34, 58, 49, 48, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 49, 49, 46, 48, 125]
+2022-03-15 16:54:55,736 - Send data to MQTT server, data is [sensor: 101, date:2022-03-15 04:54:55, temperature:11.0, humidity: 11.0]
+2022-03-15 16:54:55,736 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@2d4c380f: startup date [Tue Mar 15 16:54:55 CST 2022]; root of context hierarchy
+2022-03-15 16:54:55,736 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@5b5aee8d: startup date [Tue Mar 15 16:54:55 CST 2022]; root of context hierarchy
+2022-03-15 16:54:55,736 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:54:55,736 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:54:55,774 - delivery data to mqtt Complete: true
+2022-03-15 16:54:55,778 - delivery data to mqtt Complete: true
+2022-03-15 16:55:03,288 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-03-15 16:55:05,406 - GateWay get the data of the lora end-device and start parsing
+2022-03-15 16:55:05,406 - GateWay get the data of the zigbee end-device and start parsing
+2022-03-15 16:55:05,407 - parse lora data[-8, 0, 0, 0, 8, 0, 112, 55, 2, 0, -110, 2, 1, 0, 53, -34, -24]
+2022-03-15 16:55:05,407 - lora sensor data:[sensor: 1, date:2022-03-15 04:55:05, temperature:0.1, humidity: 65.8]
+2022-03-15 16:55:05,407 - parse zigbee data[69, 78, 68, 49, 32, 116, 101, 109, 112, 101, 114, 116, 117, 114, 101, 58, 49, 49, 32, 104, 117, 109, 105, 100, 105, 116, 121, 58, 49, 49, 13, 10]
+2022-03-15 16:55:05,408 - zigbee sensor data:[sensor: 101, date:2022-03-15 04:55:05, temperature:11.0, humidity: 11.0]
+2022-03-15 16:55:05,522 - insert data into database, data is : [sensor: 1, date:2022-03-15 04:55:05, temperature:0.1, humidity: 65.8]
+2022-03-15 16:55:05,552 - insert data into database, data is : [sensor: 101, date:2022-03-15 04:55:05, temperature:11.0, humidity: 11.0]
+2022-03-15 16:55:05,746 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 53, 58, 48, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 54, 53, 46, 56, 44, 34, 115, 73, 100, 34, 58, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 48, 46, 49, 125]
+2022-03-15 16:55:05,746 - Send data to MQTT server, data is [sensor: 1, date:2022-03-15 04:55:05, temperature:0.1, humidity: 65.8]
+2022-03-15 16:55:05,747 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@524557c8: startup date [Tue Mar 15 16:55:05 CST 2022]; root of context hierarchy
+2022-03-15 16:55:05,747 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:55:05,873 - delivery data to mqtt Complete: true
+2022-03-15 16:55:05,875 - Message is sent to mqtt successfully! The message content is：[123, 34, 115, 68, 97, 116, 101, 34, 58, 34, 50, 48, 50, 50, 45, 48, 51, 45, 49, 53, 32, 48, 52, 58, 53, 53, 58, 48, 53, 34, 44, 34, 115, 72, 117, 109, 105, 100, 105, 116, 121, 34, 58, 49, 49, 46, 48, 44, 34, 115, 73, 100, 34, 58, 49, 48, 49, 44, 34, 115, 84, 101, 109, 112, 101, 114, 97, 116, 117, 114, 101, 34, 58, 49, 49, 46, 48, 125]
+2022-03-15 16:55:05,876 - Send data to MQTT server, data is [sensor: 101, date:2022-03-15 04:55:05, temperature:11.0, humidity: 11.0]
+2022-03-15 16:55:05,876 - Refreshing org.apache.xbean.spring.context.ClassPathXmlApplicationContext@13a2adc1: startup date [Tue Mar 15 16:55:05 CST 2022]; root of context hierarchy
+2022-03-15 16:55:05,876 - Loading XML bean definitions from class path resource [Spring.xml]
+2022-03-15 16:55:05,916 - delivery data to mqtt Complete: true
+2022-03-15 16:55:06,541 - Channel Channel{id: 6, name: agiot-channel} Sending proposal with transaction: 5969d4233b7d8cb6193095be50dbad3d35dc62aa5f9bf94ecc1362c791602974 to Peer{ id: 2, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4140)
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:858)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.Status.asRuntimeException(Status.java:530)
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:482)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:694)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:397)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:459)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:63)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:546)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$600(ClientCallImpl.java:467)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:584)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+2022-03-15 16:55:06,541 - Channel Channel{id: 5, name: agiot-channel} Sending proposal with transaction: 1efb784548121e20a86f7be11cabb57b72f8102b6e5dd11c66ed1b69c9fa9db6 to Peer{ id: 1, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4140)
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:858)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.Status.asRuntimeException(Status.java:530)
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:482)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:694)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:397)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:459)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:63)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:546)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$600(ClientCallImpl.java:467)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:584)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+2022-03-15 16:55:06,546 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 5, name: agiot-channel} Sending proposal with transaction: 1efb784548121e20a86f7be11cabb57b72f8102b6e5dd11c66ed1b69c9fa9db6 to Peer{ id: 1, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+2022-03-15 16:55:06,548 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 5, name: agiot-channel} Sending proposal with transaction: 1efb784548121e20a86f7be11cabb57b72f8102b6e5dd11c66ed1b69c9fa9db6 to Peer{ id: 1, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+org.hyperledger.fabric.sdk.exception.ProposalException: getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 5, name: agiot-channel} Sending proposal with transaction: 1efb784548121e20a86f7be11cabb57b72f8102b6e5dd11c66ed1b69c9fa9db6 to Peer{ id: 1, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:869)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-15 16:55:06,549 - Channel agiot-channel could not load peer CA certificates from any peers.
+2022-03-15 16:55:06,546 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 6, name: agiot-channel} Sending proposal with transaction: 5969d4233b7d8cb6193095be50dbad3d35dc62aa5f9bf94ecc1362c791602974 to Peer{ id: 2, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+2022-03-15 16:55:06,561 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 6, name: agiot-channel} Sending proposal with transaction: 5969d4233b7d8cb6193095be50dbad3d35dc62aa5f9bf94ecc1362c791602974 to Peer{ id: 2, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+org.hyperledger.fabric.sdk.exception.ProposalException: getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 6, name: agiot-channel} Sending proposal with transaction: 5969d4233b7d8cb6193095be50dbad3d35dc62aa5f9bf94ecc1362c791602974 to Peer{ id: 2, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:869)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-15 16:55:06,563 - Channel agiot-channel could not load peer CA certificates from any peers.
+2022-03-15 16:55:06,750 - Channel Channel{id: 14, name: agiot-channel} Sending proposal with transaction: 8f10e66bb60ccadb23f1392692772cf4e0a2c58d11832de03b20943fc19e6f84 to Peer{ id: 12, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4140)
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:858)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.Status.asRuntimeException(Status.java:530)
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:482)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:694)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:397)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:459)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:63)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:546)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$600(ClientCallImpl.java:467)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:584)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+2022-03-15 16:55:06,778 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 14, name: agiot-channel} Sending proposal with transaction: 8f10e66bb60ccadb23f1392692772cf4e0a2c58d11832de03b20943fc19e6f84 to Peer{ id: 12, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+2022-03-15 16:55:06,778 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 14, name: agiot-channel} Sending proposal with transaction: 8f10e66bb60ccadb23f1392692772cf4e0a2c58d11832de03b20943fc19e6f84 to Peer{ id: 12, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+org.hyperledger.fabric.sdk.exception.ProposalException: getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 14, name: agiot-channel} Sending proposal with transaction: 8f10e66bb60ccadb23f1392692772cf4e0a2c58d11832de03b20943fc19e6f84 to Peer{ id: 12, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:869)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-15 16:55:06,779 - Channel agiot-channel could not load peer CA certificates from any peers.
+2022-03-15 16:55:06,852 - Channel Channel{id: 11, name: agiot-channel} Sending proposal with transaction: 820a65db54a69b802effb9081b21c7f23f7315b4ff82ac911c0d938b854db50a to Peer{ id: 9, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+java.lang.Exception: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at org.hyperledger.fabric.sdk.Channel.sendProposalToPeers(Channel.java:4140)
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:858)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.grpc.StatusRuntimeException: UNAVAILABLE: io exception
+	at io.grpc.Status.asRuntimeException(Status.java:530)
+	at io.grpc.stub.ClientCalls$UnaryStreamToFuture.onClose(ClientCalls.java:482)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusStatsModule$StatsClientInterceptor$1$1.onClose(CensusStatsModule.java:694)
+	at io.grpc.PartialForwardingClientCallListener.onClose(PartialForwardingClientCallListener.java:39)
+	at io.grpc.ForwardingClientCallListener.onClose(ForwardingClientCallListener.java:23)
+	at io.grpc.ForwardingClientCallListener$SimpleForwardingClientCallListener.onClose(ForwardingClientCallListener.java:40)
+	at io.grpc.internal.CensusTracingModule$TracingClientInterceptor$1$1.onClose(CensusTracingModule.java:397)
+	at io.grpc.internal.ClientCallImpl.closeObserver(ClientCallImpl.java:459)
+	at io.grpc.internal.ClientCallImpl.access$300(ClientCallImpl.java:63)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.close(ClientCallImpl.java:546)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl.access$600(ClientCallImpl.java:467)
+	at io.grpc.internal.ClientCallImpl$ClientStreamListenerImpl$1StreamClosed.runInContext(ClientCallImpl.java:584)
+	at io.grpc.internal.ContextRunnable.run(ContextRunnable.java:37)
+	at io.grpc.internal.SerializingExecutor.run(SerializingExecutor.java:123)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	... 1 more
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 more
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+2022-03-15 16:55:06,861 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 11, name: agiot-channel} Sending proposal with transaction: 820a65db54a69b802effb9081b21c7f23f7315b4ff82ac911c0d938b854db50a to Peer{ id: 9, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+2022-03-15 16:55:06,862 - getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 11, name: agiot-channel} Sending proposal with transaction: 820a65db54a69b802effb9081b21c7f23f7315b4ff82ac911c0d938b854db50a to Peer{ id: 9, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+org.hyperledger.fabric.sdk.exception.ProposalException: getConfigBlock for channel agiot-channel failed with peer peer0.org1.nwpu.com.  Status FAILURE, details: Channel Channel{id: 11, name: agiot-channel} Sending proposal with transaction: 820a65db54a69b802effb9081b21c7f23f7315b4ff82ac911c0d938b854db50a to Peer{ id: 9, name: peer0.org1.nwpu.com, channelName: agiot-channel, url: grpcs://peer0.org1.nwpu.com:7051} failed because of: gRPC failure=Status{code=UNAVAILABLE, description=io exception, cause=io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection timed out: no further information: peer0.org1.nwpu.com/192.168.109.145:7051
+	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
+	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:717)
+	at io.netty.channel.socket.nio.NioSocketChannel.doFinishConnect(NioSocketChannel.java:327)
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.finishConnect(AbstractNioChannel.java:340)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:632)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:579)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:496)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:458)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:897)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection timed out: no further information
+	... 11 more
+}
+	at org.hyperledger.fabric.sdk.Channel.getConfigBlock(Channel.java:869)
+	at org.hyperledger.fabric.sdk.Channel.parseConfigBlock(Channel.java:1781)
+	at org.hyperledger.fabric.sdk.Channel.loadCACertificates(Channel.java:1618)
+	at org.hyperledger.fabric.sdk.Channel.initialize(Channel.java:1107)
+	at cn.edu.nwpu.fabric.Client.FabricClient.invoke(FabricClient.java:176)
+	at cn.edu.nwpu.fabric.dao.FabricBlockChainDao.insert(FabricBlockChainDao.java:51)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:23)
+	at cn.edu.nwpu.disruptor.FabricEventHandler.onEvent(FabricEventHandler.java:12)
+	at com.lmax.disruptor.WorkProcessor.run(WorkProcessor.java:143)
+	at java.lang.Thread.run(Thread.java:748)
+2022-03-15 16:55:06,862 - Channel agiot-channel could not load peer CA certificates from any peers.

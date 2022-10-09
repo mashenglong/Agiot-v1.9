@@ -1,0 +1,13 @@
+2022-10-09 14:33:04,949 - SerialPort COM3 is opening
+2022-10-09 14:33:05,059 - SerialPort COM1 is opening
+2022-10-09 14:33:05,059 - lora GateWay send request frame to LoRa end-device，start
+2022-10-09 14:33:06,060 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:33:16,060 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:33:26,061 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:33:36,062 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:33:46,062 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:33:56,063 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:34:06,064 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:34:16,064 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:34:26,065 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
+2022-10-09 14:34:36,066 - lora GateWay send request frame[-8, 0, 0, 0, 4, 0, 112, 55, 2, 0, 95, -60] to LoRa end-device，over
